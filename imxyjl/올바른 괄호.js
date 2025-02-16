@@ -4,10 +4,10 @@ function solution(s){
     for(let i=0; i<s.length; i++){
         if(s[i] === '(') stack.push(1);
         if(s[i] === ')'){
-            if(stack.pop() === undefined) return false;
+            if(stack.length === 0) return false;
             stack.pop();
         }
     }
 
-    return stack[0] === undefined;
+    return stack.length === 0;
 }

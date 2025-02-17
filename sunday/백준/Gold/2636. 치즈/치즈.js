@@ -33,7 +33,7 @@ function bfs() {
     visited[0][0] = true;
 
     while (queue.length > 0) {
-        const [x, y] = queue.shift(); // shift() 사용
+        const [x, y] = queue.shift();
 
         for (let i = 0; i < 4; i++) {
             const nx = x + dx[i];
